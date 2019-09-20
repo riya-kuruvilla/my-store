@@ -1,55 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top ">
-  <a class="navbar-brand" href="#">My Store</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNavAltMarkup">
-    <!-- <div class="navbar-nav "> -->
-      <!-- <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a> -->
-      <a class="nav-item nav-link" href="#">Home</a>
-      <a class="nav-item nav-link" href="#">Products</a>
-      <a class="nav-item nav-link" href="#">CheckOut</a>
+<app-header></app-header>
 
-      <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
-    <!-- </div> -->
-  </div>
-  
-</nav>
 <div class="container wrapper">
-  <input class="form-control form-control-lg" type="text" placeholder="Search here">
+  <app-search></app-search>
   <div class="row">
-    <div class="col-4">
-      <div class="card" >
-        <img src="assets/pic3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-4">
-      <div class="card">
-        <img src="assets/pic3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
     
-    <div class="col-4">
-      <div class="card" >
-        <img src="assets/pic3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
+    
+    
+    <app-product class="col-4"></app-product>
+    <app-product class="col-4"></app-product>
+    <app-product class="col-4"></app-product>
+    
   </div>
     <div class="row">
     <div class="col-4">
@@ -86,10 +46,8 @@
 
   
 </div>
-<div class="card-footer bg-success">
-  <p>©copyright</p>
-</div>
 
+<app-footer></app-footer>
 
   
 
