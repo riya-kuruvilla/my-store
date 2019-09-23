@@ -6,12 +6,12 @@
     
     
     
-    <app-product class="col-4"></app-product>
-    <app-product class="col-4"></app-product>
-    <app-product class="col-4"></app-product>
+    <app-product *ngFor="let index of products" [property]="index" class="col-4"></app-product>
+    <!-- <app-product [property]="products[1]" class="col-4"></app-product> -->
+    <!-- <app-product [property]="product[2]" class="col-4"></app-product> --> 
     
   </div>
-    <div class="row">
+    <!-- <div class="row">
     <div class="col-4">
       <div class="card" >
         <img src="assets/pic3.jpg" class="card-img-top" alt="...">
@@ -45,8 +45,8 @@
   </div>
 
   
+</div> -->
 </div>
-
 <app-footer></app-footer>
 
   

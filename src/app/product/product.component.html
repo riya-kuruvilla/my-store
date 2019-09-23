@@ -1,10 +1,12 @@
 <div >
         <div class="card" >
-          <img src="assets/pic10.jpg" class="card-img-top" alt="...">
+          <img [src]="property.image" class="card-img-top" [alt]="property.message">
+          
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">U can't get it. Unless u buy it</p>
-            <p class="card-text">Price:400</p>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
+            <h5 class="card-title">{{property.name | uppercase}} </h5>
+            <p class="card-text">{{property.details}}</p>
+            <p class="card-text">{{property.price}}</p>
+            <a href="#" *ngIf="property.isAvailable"
+            (click)=addToCart() href="#" class="btn btn-primary">Add To Cart</a>
           </div>
         </div>
