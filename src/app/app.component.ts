@@ -9,13 +9,19 @@ import { ProductService } from './services/product.service';
 })
 export class AppComponent {
   title = 'my-store';
-  products: Product[] = [];
-  constructor(private productservice: ProductService) {
+  // products: Product[] = [];
+  constructor() {
     // this.products.push(this.productDetails);
     // this.products.push(this.secondProduct);
     // this.products.push(this.thirdProduct);
-    this.products = this.productservice.getProducts();
-    console.log('log', this.products);
+    // here foe image display cheyan
+    // this.products = this.productservice.getProducts();
+    // this. productservice .getProducts()
+    // .subscribe((res: Product[]) =>{
+    //   this.products = res;
+    // console.log('log', this.products);
+  };
+
     
   }
   // productDetails: Product = {//here product details are product specified
@@ -42,6 +48,6 @@ export class AppComponent {
   //   price: 'Price:200',
   //   isAvailable: true
   // };
-}
+
 
 

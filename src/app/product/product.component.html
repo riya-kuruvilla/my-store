@@ -1,4 +1,4 @@
-<div >
+<!-- <div >
         <div class="card" >
           <img [src]="property.image" class="card-img-top" [alt]="property.message">
           
@@ -10,3 +10,25 @@
             (click)=addToCart() href="#" class="btn btn-primary">Add To Cart</a>
           </div>
         </div>
+        <div > -->
+          <div class="card" >
+            <img [src]="property.imageUrl" class="card-img-top" [alt]="property.message">
+            <!-- lasttime property.name and id then we replace with other code -->
+            <div class="card-body">
+              <p class="card-text">{{property.id}}</p>
+              <h5 class="card-title">{{property.title | uppercase}} </h5>
+              <p class="card-text">{{property.description}}</p>
+              <p class="card-text">{{property.amount}}</p>
+              <p class="card-text">{{property.createdAt}}</p>
+              <p class="card-text">{{property.updatedAt}}</p>
+              <!-- <a href="#" *ngIf="!property.isAvailable"
+              (click)=addToCart() href="#" class="btn btn-primary">Add To Cart</a> -->
+              <a  *ngIf="!property.isAvailable"(click)="goToDetails(property.id)"
+               routerLink="details" class="btn btn-primary">Display Details</a>
+
+              <!-- {{property |json}} -->
+            </div>
+          </div>
+        
+        
+        
